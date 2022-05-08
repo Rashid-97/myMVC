@@ -1,0 +1,26 @@
+Examples:
+										/* select method */
+
+										/* insert method */
+
+										/* update method */
+
+										/* delete method */
+	// return value (true or false)
+1)
+	$this->db->table_name = "table_name";
+	$this->db->params = ["id" => 1];
+	$this->db->delete();
+2)
+	$this->db->delete(table_name, column_name, operator, value);
+3)
+	$arr [
+		"id"=>1
+	];
+	$this->db->delete(table_name, $arr, operator);
+4)
+	$this->db->table_name = "table_name";
+	$arr = [
+		"id"=>1
+	];
+	$this->db->delete($arr1);
